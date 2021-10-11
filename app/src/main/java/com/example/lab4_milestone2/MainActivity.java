@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onLocationChanged(@NonNull Location location) {
                 updateLocationInfo(location);
-                Log.i("testing", "here");
             }
         };
 
@@ -50,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
                 if (location != null) {
                     updateLocationInfo(location);
-                    Log.i("testing", "now_here");
                 }
             }
         }
